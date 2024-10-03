@@ -23,3 +23,9 @@ This application is simulating a website for a company that provides different t
 ### Other Dev Notes
 - This is a back-end application. Which means the main purpose of the application is the APIs. So there are some features implemented in back-end only.
 - You might find some security threads. This is normal because this is not a production-level application.
+
+## Important Links:
+- Live preview: https://natours-e25j.onrender.com/
+
+  (Note that this is a free host which goes off due to inactivity, you need to wait for 50s for the server to wake up)
+- API Docs: https://documenter.getpostman.com/view/35195448/2sAXxLCuGv#intro
