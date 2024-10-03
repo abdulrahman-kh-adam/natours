@@ -9,6 +9,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const cors = require('cors');
 
 // Custom Modules
 const AppError = require('./utils/AppError');
@@ -23,6 +24,10 @@ const viewRouter = require('./routes/viewRoutes');
 /******Start Creating Express App******/
 const app = express();
 /******End Creating Express App******/
+
+/******Start Enabling CORS******/
+app.use(cors());
+/******End Enabling CORS******/
 
 /******Start Setting View Engine******/
 app.set('view engine', 'pug');
