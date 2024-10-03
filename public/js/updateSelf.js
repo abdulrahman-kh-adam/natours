@@ -5,7 +5,7 @@ export const updateUserData = async data => {
   try {
     const res = await axios({
       method: 'PATCH',
-      url: 'http://localhost:3000/api/v1/users/update-self',
+      url: 'https://natours-e25j.onrender.com/update-self',
       data
     });
     if (res.data.status === 'success') {
