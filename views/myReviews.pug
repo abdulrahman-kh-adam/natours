@@ -1,0 +1,20 @@
+extends base
+include _reviewCard
+
+
+block content
+  main.main
+    .user-view
+      include _userNavMenu
+
+      .user-view__content
+        .booked-tours
+          h2.heading-secondary.ma-bt-md Your reviews
+          h2 To delete a review, please email us at <span style="text-decoration: underline;">admin@natours.io</span> or call us <span style="text-decoration: underline;">+20 1125733974</span>.
+          br
+          .cards
+            - if (reviews.length === 0)
+              h2 No reviews yet. Book a tour to write a review.
+            - else
+              each review in reviews
+                +reviewCard(review, review.tour.name)
